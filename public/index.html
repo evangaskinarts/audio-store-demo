@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Benheiser Sounds - React Demo</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+
+
+    <div id="header"></div>
+
+
+    <div id="big-search">
+        <form>
+        <input type="text" placeholder="Search items here" aria-describedby="exampleHelpText" id="big-search-input"></input>
+        </form>
+    </div>
+
+
+
+
+
+    <div id="mainBody">
+
+    <div class="topAd"></div>
+
+    <div class="searchBoxTop">
+          <h3>Search Results for: <span class="search-query"></span></h3>
+
+          <form>
+          <input type="text" placeholder="Search" aria-describedby="exampleHelpText" class="searchTopBoxInput">
+          </form>
+
+        </div>
+
+    <div class="fader"></div>
+
+    <div id="searchItemBlock">
+        
+        <div id="searchItemList"></div>
+        <div id="searchItemListFooter">
+          <div id="searchresults-footer-count">Results: 15 items found</div>
+        </div>
+    </div>
+
+    <div id="itemPage">
+      <div id="itemInfoPost"></div>
+      <div id="subItemBlock">
+
+        <h3 class="also-bought-header">Customers who bought this item also bought:</h3>
+        <div id="recBar"></div>
+
+        <div class="bodyText">
+        <h1>About the U-240 Dynamite Headphones</h1>
+        <p class="bodyP">The K 240 Studio headphones from AKG feature a semi-open circumaural design, and use patented Varimotion technology and extra-large transducers to deliver extremely precise, detailed sound. The headphones have a self-adjusting headband, as well as thick around-ear cushions for lasting comfort.</p>
+
+          <p class="bodyP">The single-sided detachable straight cable resists tangles and can be easily replaced. The cable has a gold-plated 3.5mm plug with a 1/4" screw-on adapter to provide wide compatibility with consumer and professional audio devices. It comes with an Auray COHH-1 Headphone Holder with Padded Cradle and Adjustable Angle attaches to either a horizontal or vertical surface in order to support one full-sized pair of headphones and a 25' Extension Cable.
+        </p>
+        </div>
+
+      </div>
+      <div id="sub-item-footer">
+          <div id="sub-item-footer-line">This webapp is a demo by <a href="http://evangaskin.com" class="portfolioLink" target="_blank">Evan Gaskin</a>. Copyleft 2018</div>
+        </div>
+    </div>
+
+
+    </div>  <!-- mainbody -->
+
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
