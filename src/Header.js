@@ -6,26 +6,52 @@ import hamburger from './images/hamburger.svg';
 var headerLinks = [
     
     {
-      title: "Headphones",
-      url: "#"
+      title: "Home",
+      url: "#",
+      current: "false"
     },
     {
-      title: "Interfaces",
-      url: "#"
+      title: "Shop",
+      url: "#",
+      current: "true"
     },
     {
-      title: "Instruments",
-      url: "#"
+      title: "Events",
+      url: "#",
+      current: "false"
+    },
+    {
+      title: "Lessons",
+      url: "#",
+      current: "false"
     }
+    
 
 ];
 
+var cart = {
+      value: 0
+      };
+
+
 
 export class Header extends Component {
+
+
+
   render () {
     
     return (
       <div>
+
+
+      <div id="big-search">
+        <input type="text" placeholder="Search items here" aria-describedby="exampleHelpText" id="big-search-input" autocomplete="off"></input>
+      </div>
+
+
+
+      <div id="mainheader">
 
       <div id="header-upper">
         <div id="header-upper-right">
@@ -48,8 +74,14 @@ export class Header extends Component {
             <a id="deburger"><img src={hamburger}/></a>
             {
             headerLinks.map((link) => {
+                
+                var linkClassList = "navLink";
+                if (link.current === "true") {
+                    linkClassList = linkClassList + " curLink";
+                };
+
                 return (
-                <a href={link.url} className="navLink">{link.title}</a>
+                <a href={link.url} className={linkClassList}>{link.title}</a>
                 );
               }) 
             }
@@ -68,7 +100,9 @@ export class Header extends Component {
             <h4>Search</h4>
           </div>
 
-          <div id="nav-cart">
+          
+
+          <div id="nav-cart" title="No functionality...yet">
             <div id="nav-cart-icon">
               <img src="images/cart.svg" />
             </div>
@@ -82,6 +116,7 @@ export class Header extends Component {
       
 
       </div>
+      </div> 
     ) // return
     
   } // render
