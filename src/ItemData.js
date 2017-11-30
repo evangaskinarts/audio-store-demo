@@ -2,9 +2,9 @@
 import headphones from './images/headphones.png';
 
 
+const colorSwatches = ["white","black","#D7202C","#1AA99D","#FD91A3","#5D65FB"];
 
-
-var colorSwatchesTwo = [
+const colorSwatchesTwo = [
       
       {
         colorName: "white",
@@ -32,6 +32,45 @@ var colorSwatchesTwo = [
       }
 
 ];
+
+
+
+var itemData2 = [
+  "u240headphones" : {
+    name: "U-240 Hypebeast Headphones",
+    imgURL: headphones,
+    category: "Headphones",
+    manufacturer: "Benheiser",
+    cost: {
+      price: "$64.00",
+      shipping: "$4.00",
+      onsale: "true",
+      origprice: "$80.00"
+    },
+    colors: colorSwatches2
+  },
+  "scarlett" : {
+    name: "Scarlett 2i2 Audio Interface",
+    imgURL: "http://media.musiciansfriend.com/is/image/MMGS7/Scarlett-Solo-2nd-Gen-USB-Audio-Interface/J33790000000000-00-500x500.jpg",
+    category: "Audio Processing",
+    manufacturer: "Focusrite",
+    cost: {
+      price: "$64.00",
+      shipping: "$4.00",
+      onsale: "true",
+      origprice: "$80.00"
+    },
+    colors: {colorName: "red", code: "#D7202C"}
+  },
+  {
+    name: "U-240 Dynamite Headphones",
+    imgURL: headphones,
+    category: "Gear",
+    manufacturer: "Benheiser"
+  }
+
+];
+
 
 
 
@@ -80,7 +119,7 @@ var itemData = [
              "https://images-na.ssl-images-amazon.com/images/I/81Ul2l7urrL._SY679_.jpg",
              "https://images-na.ssl-images-amazon.com/images/I/71Y5j-dr57L._SX522_.jpg"
             ],
-    category: "Gear",
+    category: "Headphones",
     manufacturer: "AKG",
     cost: {
       price: "$67.00",
@@ -128,7 +167,7 @@ var itemData = [
     colors: colorSwatchesTwo
   },
   {
-    name: "M200 Audio Interface",
+    name: "Scarlett 2i2 Audio Interface",
     imgURL: "http://media.musiciansfriend.com/is/image/MMGS7/Scarlett-Solo-2nd-Gen-USB-Audio-Interface/J33790000000000-00-500x500.jpg",
     altImgs: ["https://images-na.ssl-images-amazon.com/images/I/81BVXJTznNL._SX466_.jpg",
              "https://images-na.ssl-images-amazon.com/images/I/81KkASk--ML._SX522_.jpg",
@@ -163,7 +202,7 @@ var itemData = [
     colors: [{colorName: "black", code: "black"}]
   },
   {
-    name: "M200 Audio Interface",
+    name: "Scarlett 2i2 Audio Interface",
     imgURL: "http://media.musiciansfriend.com/is/image/MMGS7/Scarlett-Solo-2nd-Gen-USB-Audio-Interface/J33790000000000-00-500x500.jpg",
     altImgs: ["https://images-na.ssl-images-amazon.com/images/I/81BVXJTznNL._SX466_.jpg",
              "https://images-na.ssl-images-amazon.com/images/I/81KkASk--ML._SX522_.jpg",
